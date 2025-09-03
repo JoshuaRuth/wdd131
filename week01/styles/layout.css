@@ -1,7 +1,7 @@
 
 body {
   display: grid;
-  grid-template: 5fr;
+  grid-template-columns: 3fr 2fr 2fr;
 }
 
 header {
