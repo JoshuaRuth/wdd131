@@ -10,7 +10,10 @@
 
 }
 
-body {background-color: #eee;}
+body {
+    background-color: #eee;
+
+}
 
 
 header {
@@ -44,14 +47,16 @@ main {
     font-family: var(--non-heading-font);
     height: 125vh;
     background: var(--non-heading-background-color);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: fit-content;
+    background-color: chartreuse;
 }
 
 .card {
     height: auto;
     border: #000000;
     border-style: dashed;
-     grid-column: 1 / 3;
+    grid-column: 1 / 3;
 }
 
 .card img{
