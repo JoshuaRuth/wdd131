@@ -3,12 +3,14 @@
 :root {
     --heading-font: "Asimovian", sans-serif ;
     --non-heading-font: "Roboto", sans-serif;
-    --heading-color: #5845fd;
+    --heading-color: #2e37c2;
     --non-heading-color: #000000;
-    --heading-background-color: #f8ff96;
+    --heading-background-color: #fffd95;
     --non-heading-background-color: #eee;
 
 }
+
+
 
 body {
     background-color: #eee;
@@ -47,15 +49,14 @@ main {
     font-family: var(--non-heading-font);
     height: 125vh;
     background: var(--non-heading-background-color);
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     max-width: fit-content;
-    background-color: chartreuse;
+    background-color: var(--non-heading-background-color);
 }
 
 .card {
     height: auto;
-    border: #000000;
-    border-style: dashed;
+    border-bottom: var(--heading-color);
+    border-style: groove;
     grid-column: 1 / 3;
 }
 
@@ -64,10 +65,18 @@ main {
     width: auto;
 }
 
+aside {
+    background-color: var(--non-heading-background-color);
+    height: 40px;
+}
+
+.nav_aside {
+    margin: 10px;
+}
+
 footer {
     font-family: var(--non-heading-font);
     background: var(--heading-background-color);
-    padding: 1rem;
     text-align: center;
 }
 
@@ -97,4 +106,10 @@ footer {
 	font-weight: 700;
 	text-decoration: underline;
 	text-decoration-color: rgb(118, 255, 113);
+}
+
+.highlight {
+	color: navy;
+	font-weight: 700;
+	font-family: var();
 }
