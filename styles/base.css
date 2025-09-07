@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --heading-font: "Roboto Slab", serif;
+    --non-heading-font: "Roboto", sans-serif;
+    --heading-color: #5845fd;
+    --non-heading-color: #000000;
+    --heading-background-color: #f8ff96;
+    --non-heading-background-color: #eee;
+
+}
+
+body {background-color: #eee;}
+
+header {    
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#course-title {    
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 20px
+}
+
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+main {
+    font-family: var(--non-heading-font);
+    height: 125vh;
+    background: var(--non-heading-background-color);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    height: auto;
+    border: #000000;
+    border-style: dashed;
+     grid-column: 1 / 3;
+}
+
+.card img{
+    height: 150px;
+    width: auto;
+}
+
+footer {
+    font-family: var(--non-heading-font);
+    background: var(--heading-background-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--heading-background-color);
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation li {
+	flex: 1 1 auto;
+}
+.navigation a {
+    font-size: 24px;
+    font-family: var(--heading-font);
+	display: block;
+	color: var(--heading-color);
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: rgb(118, 255, 113);
+}
