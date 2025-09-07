@@ -79,6 +79,7 @@ footer {
 	display: block;
 	color: var(--heading-color);
 	text-decoration: none;
+    margin: 10px 40px;
 }
 
 .navigation a:hover {
