@@ -22,7 +22,7 @@ main {
     grid-gap: 1rem;
 }
 
-footer, main, footer {
+header, main, footer {
     background-color: var(--background-color);
     max-width: var(--max-width);
     border: var(--border);
