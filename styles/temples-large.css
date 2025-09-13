@@ -1,8 +1,8 @@
 
 @media screen and (min-width: 500px){
     header {
-        background-color: black;
-        color:white;
+        background-image: linear-gradient(#1623e2, #fffd95);
+        color:#eee;
     }
 
     main {
