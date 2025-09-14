@@ -8,4 +8,39 @@
     main {
         grid-template-columns: 1fr;
     }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+    list-style: none;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	background-color: var(--heading-background-color);
+	align-items: center;
+    text-align: center;
+    justify-content: center;
 }
+
+    .navigation li {
+	flex: 1 1 auto;
+}
+
+    .navigation a {
+    font-size: 24px;
+    font-family: var(--heading-font);
+	display: block;
+	color: var(--heading-color);
+	text-decoration: none;
+    margin: 10px 40px;
+}
+
+    nav a:hover {
+        text-decoration: wavy;
+        background-color: #eee;
+    }
+}
+
+
