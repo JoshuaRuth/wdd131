@@ -29,9 +29,10 @@
 }
 
     .navigation a {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 24px;
     font-family: var(--heading-font);
-	display: block;
 	color: var(--heading-color);
 	text-decoration: none;
     margin: 10px 40px;

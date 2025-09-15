@@ -88,7 +88,7 @@ footer {
 	content: "❌";
 }
 
-.navigation {
+.navigation.open {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -99,11 +99,8 @@ footer {
 
 .navigation a {
     display: none;
-    font-size: 20px;
-    font-family: var(--heading-font);
-	display: block;
-	color: var(--heading-color);
 }
+
 
 .navigation a:active {
 	font-weight: 700;
@@ -113,6 +110,10 @@ footer {
 
 .open a {
 	display: block;
+    font-size: 20px;
+    font-family: var(--heading-font);
+	display: block;
+	color: var(--heading-color);
 }
 
 .show li {
