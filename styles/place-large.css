@@ -1,0 +1,35 @@
+@media screen and (min-width: 500px){
+    header {
+        background-image: linear-gradient(#1623e2, #fffd95);
+        color:#eee;
+    }
+
+    main {
+    font-family: var(--non-heading-font);
+    background: var(--non-heading-background-color);
+    max-width: fit-content;
+    background-color: var(--non-heading-background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    }
+
+    .hero img{
+        display: grid;
+        grid-column: 0 / 4;
+    }
+
+    .card1 {
+    background-color: coral;
+    height: 500px;
+    width: 200px;
+    grid-column: 0 / 1;
+    }
+
+    .card2 {
+    background-color: aqua;
+    height: 500px;
+    width: 200px;
+    grid-column: 3 / 4;
+    }
+}

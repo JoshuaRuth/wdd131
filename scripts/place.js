@@ -9,3 +9,6 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}© ♋Joshua Rut
 
 let text = document.lastModified;
 document.getElementById("lastModified").innerHTML = text;
+
+//==============================================================================//
+//Weather Stuff

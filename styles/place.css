@@ -5,3 +5,62 @@
     --header-font: Asimovian;
     --non-header-font: Roboto;
 }
+
+body {
+    background-color: #eee;
+}
+
+
+header {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+main {
+    font-family: var(--non-heading-font);
+    background: var(--non-heading-background-color);
+    max-width: fit-content;
+    background-color: var(--non-heading-background-color);
+    display: grid;
+    grid-template-columns: 1fr
+}
+    .hero img{
+        display: grid;
+    }
+
+    .card1 {
+    height: 10rem;
+    width: fit-content;
+    border-bottom: var(--heading-color);
+    border-style: groove;
+}
+    .card2 {
+    height: 10rem;
+    width: fit-content;
+    border-bottom: var(--heading-color);
+    border-style: groove;
+}
+
+footer {
+    height: 100px;
+    width: fit-content;
+    border: 2px;
+    border-color: crimson;
+    border-style: ridge;
+}
