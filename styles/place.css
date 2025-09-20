@@ -1,0 +1,7 @@
+:root {
+    --background-color: rgb(60, 60, 145);
+    --header-color: rgb(207, 69, 69);
+    --contrast-txt-color: #f5f5f5;   
+    --header-font: Asimovian;
+    --non-header-font: Roboto;
+}
