@@ -13,42 +13,41 @@
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
-<body>
+    <body>
         <header>
             <h1>CHILE</h1>
         </header>
         <main>
             <div class="hero">
                 <picture>
-                    <source srcset="images/large_moais.webp" media="min_width: 500px">
-                    <img src="images/mobile_moai.webp" alt="No Hero Image" width="1000" height="677">
-                </picture>    
+                    <source srcset="images/larger_moai.webp" media="(min-width: 500px)">
+                    <img src="images/mobile_moai.webp" alt="moais" width="500" height="750">
+                </picture>
             </div>
             <section class="card1">
                 <h2>DATA</h2>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-                <p>7</p>
+                <p>Area: 756,102 sq km</p>
+                <p>Population: 19.76 milion</p>
+                <p>Capital: Santiago</p>
+                <p>Languages: Spanish, Mapudungun</p>
+                <p>Currency: Chilean Peso</p>
+                <p>Time Zone: GMT-3</p>
+                <p>Calling Code: +56</p>
+                <p>Internet TLD: .cl</p>
             </section>
             <section class="card2">
-                <h3>WEATHER</h3>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-                <p>7</p>
+                <h3>WEATHER <img src="images/sun_icon.svg" alt="sun" width="20" height="20"> </h3>
+                <p>Temperature: 50 °F</p>
+                <p>Conditions: Sunny, Partly Windy</p>
+                <p>Wind: 15 MPH</p>
+                <p>Wind Chill: <span id="windChill"></span> °F </p>
             </section>
         </main>       
-</body>
     <footer>
         <p><span id="year"></span></p>
         <p>Last Modified on:</p>
         <p id="lastModified"></p>
     </footer>
+    </body>
+
 </html>
