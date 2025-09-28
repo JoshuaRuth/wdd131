@@ -1,0 +1,121 @@
+:root {
+    --heading-font: "Asimovian", sans-serif ;
+    --non-heading-font: "Roboto", sans-serif;
+    --heading-color: #2e37c2;
+    --non-heading-color: #000000;
+    --heading-background-color: #fffd95;
+    --non-heading-background-color: #eee;
+}
+
+body {
+    background-color: #eee;
+}
+
+
+
+header {
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--heading-font);
+    background-color: var(--heading-color);
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    font-family: var(--non-heading-font);
+    min-height: 125vh;
+    background: var(--non-heading-background-color);
+    max-width: 800px;
+    background-color: var(--non-heading-background-color);
+    margin: 0 auto;
+}
+
+footer {
+    font-family: var(--non-heading-font);
+    background: var(--heading-background-color);
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+    margin: 1rem;
+}
+    
+.container img {
+    border: 6px;
+    border-style: groove;
+    border-color: #2e37c2;
+    max-width: 200px;
+}
+
+.container figcaption {
+    text-align: center;
+}
+
+/* menu and Nav */
+#menu {
+    position: fixed;
+    padding: 5px;
+    top: 1rem;
+    left: 1rem;
+    color:whitesmoke;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+	background-color: var(--heading-background-color);
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navigation a {
+    display: none;
+}
+
+
+.navigation a:active {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: rgb(118, 255, 113);
+}
+
+.open a {
+	display: block;
+    font-size: 20px;
+    font-family: var(--heading-font);
+	display: block;
+	color: var(--heading-color);
+}
+
+.show li {
+    display: block;
+}

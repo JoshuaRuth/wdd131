@@ -1,0 +1,47 @@
+
+@media screen and (min-width: 500px){
+    header {
+        background-image: linear-gradient(#1623e2, #fffd95);
+        color:#eee;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .navigation {
+    list-style: none;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	background-color: var(--heading-background-color);
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+    .navigation li {
+	flex: 1 1 auto;
+}
+
+    .navigation a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-family: var(--heading-font);
+	color: var(--heading-color);
+	text-decoration: none;
+    margin: 10px 40px;
+}
+
+    nav a:hover {
+        text-decoration: wavy;
+        background-color: #eee;
+    }
+}
+
+
