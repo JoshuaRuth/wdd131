@@ -17,7 +17,7 @@ const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+  	hamButton.classList.toggle('open');
 });
 
 // temples
@@ -81,7 +81,7 @@ const temples = [
   {
     templeName: "Santiago Chile",
     location: "Santiago, Chile",
-    dedicated: "1983, September, 15-17",
+    dedicated: "1983, September, 17",
     area: 20831,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-chile-lds-temple-1085562-wallpaper.jpg"
@@ -89,7 +89,7 @@ const temples = [
   {
     templeName: "Frankfurt Germany",
     location: "Frankfurt, Germany",
-    dedicated: "1987, August,28-30",
+    dedicated: "1987, August, 30",
     area: 32895,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/frankfurt-germany/400x250/frankfurt-temple-1-2278179.jpg"
@@ -97,17 +97,45 @@ const temples = [
   {
     templeName: "Cardston Alberta",
     location: "Cardston Alberta, Canada",
-    dedicated: "1923, August, 26-29",
+    dedicated: "1923, August, 29",
     area: 88562,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cardston-alberta/400x250/cardston-alberta-temple-lds-680533-wallpaper.jpg"
-  },
+  }
 ];
 
-createTempleCard(); 
+createTempleCard(temples); 
 
-function createTempleCard() {
-	temples.forEach(temple => {
+const homeLink = document.querySelector("#home");
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+
+homeLink.addEventListener('click', () => {
+    createTempleCard(temples);
+});
+
+oldLink.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
+});
+
+newLink.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
+});
+
+largeLink.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallLink.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+
+function createTempleCard(filteredTemples) {
+  document.querySelector(".temple-grid").innerHTML = "";
+	filteredTemples.forEach(temple => {
 		let card = document.createElement("section");
 		let name = document.createElement("h3");
 		let location = document.createElement("p");
@@ -116,7 +144,7 @@ function createTempleCard() {
 		let img = document.createElement("img");
 
 		name.textContent = temple.templeName;
-		location.innerHTML = `<span class="label">Location:</span ${temple.location}`;
+		location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
 		dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
 		area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
 		img.setAttribute("src", temple.imageUrl);

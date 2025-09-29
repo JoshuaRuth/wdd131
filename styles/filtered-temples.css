@@ -23,7 +23,7 @@ header {
 
 h1 {
     font-family: var(--heading-font);
-    color: var(--heading-color);
+    color: var(--non-heading-background-color);
     text-align: center;
 }
 
@@ -34,6 +34,12 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 18px;
+}
 main {
     font-family: var(--non-heading-font);
     min-height: 125vh;
@@ -43,6 +49,12 @@ main {
     margin: 0 auto;
 }
 
+.label {
+    color: #2e37c2;
+    font-weight: 500;
+}
+
+
 footer {
     font-family: var(--non-heading-font);
     background: var(--heading-background-color);
@@ -50,25 +62,23 @@ footer {
     flex: 1 1 auto;
 }
 
-.container {
+.temple-grid {
+    text-align: center;
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    grid-gap: 25px;
+    grid-gap: 3rem;
     place-items: center;
     margin: 1rem;
 }
     
-.container img {
+section img {
     border: 6px;
     border-style: groove;
     border-color: #2e37c2;
-    max-width: 200px;
+    width: 100%;
+    box-shadow: 0 0 5px #000000;
+    
 }
-
-.container figcaption {
-    text-align: center;
-}
-
 /* menu and Nav */
 #menu {
     position: fixed;

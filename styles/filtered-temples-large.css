@@ -5,6 +5,13 @@
         color:#eee;
     }
 
+
+    h1 {
+        font-family: var(--heading-font);
+        color:#eee;
+        text-align: center;
+    }
+
     main {
         grid-template-columns: 1fr;
     }
