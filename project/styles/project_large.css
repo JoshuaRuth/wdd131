@@ -15,6 +15,40 @@
         padding: 12px;
     }
 
+    .navigation {
+    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--background-color-2);
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--heading-color);
+}   
+
+    .navigation li {
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        font-size: 24px;
+        font-family: var(--heading-font);
+        display: block;
+        color: var(--heading-color);
+        text-decoration: none;
+        margin: 10px 40px;
+    }
+
+    .navigation a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: var(--accent-color);
+    }
+
+    .highlight {
+        color: var(--heading-color);
+        font-weight: 700;
+        font-family: var(--heading-font);
+    }
 
 
 
