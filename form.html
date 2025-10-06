@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms WDD131</title>
+    <meta name="description" content="This is a website that Joshua Ruth made for class WDD 131 – Dynamic Web Fundamentals.">
+    <meta name="author" content="Joshua Ruth">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <h1>FORM</h1>
-    
+    <main>
+        <h1>review form </h1>
+        <form method="get" action="review.html" class="wf1"></form>
+        
+        <fieldset>
+            <legend>Product Review Form</legend>
+
+                <label>Product Name*
+                    <select name="subject">
+                        <option value="">Please Select a Product</option>
+                    </select>
+                </label>
+
+            <div>Overall Rating*</div>
+            <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
+            <label><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
+            <label><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
+            <label><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
+            <label><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
+        
+            <label>Installation Date &#9662;<input type="date" name="completedDate"></label>
+
+            <div>Are there any product features that deserve special Emphasis?*</div>
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes">Design</label>
+
+            
+
+            <label>Your Name (Optional)<input type="text" id="uname" name="uname"> </label>
+        </fieldset>
+
+        <fieldset>          
+        <input type="submit" value="Submit Product Review">
+        
+    </main>
+
+    <footer> 
+        <p><span id="year"></span></p>
+        <p>Last Modified on:</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
