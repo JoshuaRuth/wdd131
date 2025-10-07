@@ -16,16 +16,15 @@
 <body>
     <main>
         <h1>review form </h1>
-        <form method="get" action="review.html" class="wf1"></form>
         
-        <fieldset>
-            <legend>Product Review Form</legend>
-
-                <label>Product Name*
-                    <select name="subject">
-                        <option value="">Please Select a Product</option>
+        <form method="get" action="review.html" class="wf1"></form>
+                <div Class="form">
+                <label for="selectProduct" class="product-l">Product Name* 
+                    <select name="product" required>
+                        <option value="" disabled selected>Please Select a Product</option>
                     </select>
                 </label>
+                </div>
 
             <div>Overall Rating*</div>
             <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
@@ -36,20 +35,24 @@
         
             <label>Installation Date &#9662;<input type="date" name="completedDate"></label>
 
-            <div>Are there any product features that deserve special Emphasis?*</div>
+            <div>Are there any product features that deserve special Emphasis?*
             <label><input type="checkbox" name="durability" value="yes">Durability</label>
             <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
             <label><input type="checkbox" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" name="design" value="yes">Design</label>
-
+            </div>
             
+            <div>
+            <label for="review"> Give us feedback</label>
+            <textarea id="review" name="review" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
+            </div>
 
             <label>Your Name (Optional)<input type="text" id="uname" name="uname"> </label>
-        </fieldset>
 
-        <fieldset>          
-        <input type="submit" value="Submit Product Review">
         
+        <div>
+            <input type="submit" value="Submit Review Form">
+        </div>
     </main>
 
     <footer> 
