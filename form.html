@@ -13,64 +13,52 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
-    <form>
-    <div class="form">
-    <label for = "chooseProduct" class ="product-label"> Product Name </label>
-    <select id="chooseProduct" name="products">
-    <option value ="" disabled selected> Choose product... </option> 
-    </select>
-    </div>
+<body>
+    <main>
+        <h1>review form </h1>
+        
+        <form method="get" action="review.html" class="wf1"></form>
+                <div Class="form">
+                <label for="selectProduct" class="product-l">Product Name* 
+                    <select name="selectProduct" required>
+                        <option value="" disabled selected>Please Select a Product</option>
+                    </select>
+                </label>
+                </div>
 
-    <div class="form">
-    <label for="rating" class="rating-label">Overall rating</label>
+            <div class="form">Overall Rating*</div>
+            <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
+            <label><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
+            <label><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
+            <label><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
+            <label><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
+        
+            <label>Installation Date &#9662;<input type="date" name="completedDate"></label>
 
-    <div class="rating">
-        <div class="rate-box">
-        <label for="star5" title="5 stars">&star;</label>
-        <input type="radio" id="star5" name="rating" value="5">
-    </div>
-        <div class="rate-box">
+            <div>Are there any product features that deserve special Emphasis?*
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes">Design</label>
+            </div>
+            
+            <div>
+            <label for="review"> Give us feedback</label>
+            <textarea id="review" name="review" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
+            </div>
 
-        <label for="star4" title="4 stars">&star; &star;</label>
-        <input type="radio" id="star4" name="rating" value="4">
-    </div>
-        <div class="rate-box">
-        <label for="star3" title="3 stars">&star; &star; &star;</label>
-        <input type="radio" id="star3" name="rating" value="3">
-    </div>
-        <div class="rate-box">
-        <label for="star2" title="2 stars">&star; &star;&star;&star;</label>
-        <input type="radio" id="star2" name="rating" value="2">
-    </div>
-        <div class="rate-box">
-        <label for="star1" title="1 star"> &star; &star;  &star; &star; &star;</label>
-    <input type="radio" id="star1" name="rating" value="1">
+            <label>Your Name (Optional)<input type="text" id="uname" name="uname"> </label>
+
+        
+        <div>
+            <input type="submit" value="Submit Review Form">
         </div>
-        </div>
-    </div>
-    <div class="form">
-    <label for="date" class="date-label">
-        Date of installation </label>
-    <input type="date" id="date" name="date">
-    </div>
-    <div class="form">
-    <label> Which feature did you find useful in the product? </label>
-    <em>(check all that apply)</em>
-    
-    <label> <input type="checkbox" id="" name=""> Durability </label>
-    <label> <input type="checkbox" id="" name=""> Ease of Use </label>
-    <label> <input type="checkbox" id="" name=""> Perfomance</label>
-    <label> <input type="checkbox" id="" name=""> Design </label>
-    </div>
-    <div class="form">
-    <label for="review"> Give us feedback</label>
-    <textarea id="review" name="review" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
-    </div>
-    <div class="form">
-    
-    <label for="username"> Your Name (optional)</label>
-    <input type="text" id="username" name="username">
-    </div>
-    <button type="submit">Post review</button>
-    </form>
+    </main>
+
+    <footer> 
+        <p><span id="year"></span></p>
+        <p>Last Modified on:</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
 </html>
