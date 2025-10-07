@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms WDD131</title>
-    <meta name="description" content="This is a website that Joshua Ruth made for class WDD 131 – Dynamic Web Fundamentals.">
+    <meta name="description" content="This is a webform/website that Joshua Ruth made for class WDD 131 – Dynamic Web Fundamentals.">
     <meta name="author" content="Joshua Ruth">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,16 @@
         <h1>review form </h1>
         
         <form method="get" action="review.html" class="wf1"></form>
-                <div Class="form">
-                <label for="selectProduct" class="product-l">Product Name* 
-                    <select name="selectProduct" required>
-                        <option value="" disabled selected>Please Select a Product</option>
-                    </select>
-                </label>
-                </div>
+            
+            <div class="form">
+            
+            <label for="selectProduct">Product Name* 
+            
+            <select id="selectProduct" name="products" required>
+                <option value="" disabled selected>Please Select a Product</option>
+            </select>
+            </label>
+            </div>
 
             <div class="form">Overall Rating*</div>
             <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
@@ -33,7 +36,9 @@
             <label><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
             <label><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
         
+            <div class="form">
             <label>Installation Date &#9662;<input type="date" name="completedDate"></label>
+            </div>
 
             <div>Are there any product features that deserve special Emphasis?*
             <label><input type="checkbox" name="durability" value="yes">Durability</label>
@@ -42,7 +47,7 @@
             <label><input type="checkbox" name="design" value="yes">Design</label>
             </div>
             
-            <div>
+            <div class="form">
             <label for="review"> Give us feedback</label>
             <textarea id="review" name="review" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
             </div>
