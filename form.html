@@ -17,43 +17,46 @@
     <main>
         <h1>review form </h1>
         
-        <form method="get" action="review.html" class="wf1"></form>
+        <form method="get" action="review.html" class="rf1"></form>
             
-            <div class="form">
-            
+        <fieldset>
+            <legend>Product Info</legend>
             <label for="selectProduct">Product Name* 
-            
             <select id="selectProduct" name="products" required>
                 <option value="" disabled selected>Please Select a Product</option>
             </select>
             </label>
-            </div>
 
-            <div class="form">Overall Rating*</div>
-            <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
-            <label><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
-            <label><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
-            <label><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
-            <label><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
-        
-            <div class="form">
             <label>Installation Date &#9662;<input type="date" name="completedDate"></label>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Rating and review</legend>
+            
+            <div class="r_stars">
+                <label for="onestar"><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
+                <label for="twostar"><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
+                <label for="threestar"><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
+                <label for="fourstar"><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
+                <label for="fivestar"><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
             </div>
 
             <div>Are there any product features that deserve special Emphasis?*
-            <label><input type="checkbox" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
-            <label><input type="checkbox" name="performance" value="yes">Performance</label>
-            <label><input type="checkbox" name="design" value="yes">Design</label>
+                <label><input id="dura" type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input id="ease" type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
+                <label><input id="perform" type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input id="design" type="checkbox" name="design" value="yes">Design</label>
             </div>
             
-            <div class="form">
             <label for="review"> Give us feedback</label>
             <textarea id="review" name="review" rows="5" cols="40" placeholder="Enter your feedback here"></textarea>
-            </div>
-
+            
+            <div>
             <label>Your Name (Optional)<input type="text" id="uname" name="uname"> </label>
-
+            </div>
+        
+        </fieldset>
         
         <div>
             <input type="submit" value="Post Review Form">
