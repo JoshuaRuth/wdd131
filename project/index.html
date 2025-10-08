@@ -24,18 +24,61 @@
     
     <main>
         <section class="card">
-        <h2>Purpose</h2>
-        <p>This website's purpose is to be a educational source on the different types of rocks and gemstones. It will also compile helpful website links for rockhounding.</p>
+        <h2>Questionaire and News letter</h2>
+            <form method="get" action="thanks.html" id="opinion_f">
+
+                <fieldset>
+                <legend>Opinions and experience</legend>
+                
+                <div>
+                <label>What is your favorite Gemstone?<select id="selectGem" name="gems" required><option value="" disabled selected>Select your favorite Gemstone</option></select></label>
+                
+                </div>
+                <div>
+                <label for="tellUs">Tell us about you experiences!*<textarea id="opinion_txt" name="opinion_txt" rows="4" placeholder="Tell us your favorite things about rockhounding!" required></textarea></label>
+                </div>
+                
+                <div>
+                <label>How experienced are you in gemstones and or rockhounding?*</label>
+                </div>
+
+                <div>
+                <label for="onestar">noob<input type="radio" id="nub" name="experience" value="1" required></label>
+                <label for="twostar">intermediate<input type="radio" id="adv" name="experience" value="2" required></label>
+                <label for="threestar">Pro<input type="radio" id="pro" name="experience" value="3" required></label>
+                </datalist>
+                </label>
+                </div>
+                
+                </fieldset>
+                
+                <fieldset>
+                <legend>Email and Name</legend>
+                
+                <div>
+                <label>Sign up for our newsletter:<input type="email" id="email" name="email"></label>
+                </div>
+                <div>
+                <label>Enter your name here*:<input type="text" id="name" name="name" required></label>
+                </div>
+
+
+                <div>
+                <input type="submit" value="Send us your Opinion">
+                </div>
+                
+                </fieldset>
+            </form>
         </section>
 
-        <section class="card">
-        <h2>Scenarios:</h2>
+        <section class="card" id="welcome">
+        <h2>Welcome!</h2>
         <img src="images/garnets.webp" alt="no image" width="300px" height="auto">
-
+        <p>Welcome to this Website!!! We have cool pictures with crystals and gemstones</p>
         </section>
 
         <section class="card">
-        <h2>Wireframe and Color scheme:</h2>
+        <h2>Cool links to visit:</h2>
 
         </section>
     </main>
