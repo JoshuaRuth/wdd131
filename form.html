@@ -15,14 +15,13 @@
 </head>
 <body>
     <main>
-        <h1>review form </h1>
+        <h1>review form</h1>
         
-        <form method="get" action="review.html" class="rf1"></form>
+        <form method="get" action="review.html" class="rf1">
             
         <fieldset>
             <legend>Product Info</legend>
-            <label for="selectProduct">Product Name* 
-            <select id="selectProduct" name="products" required>
+            <label for="selectProduct">Product Name*<select id="selectProduct" name="products" required>
                 <option value="" disabled selected>Please Select a Product</option>
             </select>
             </label>
@@ -32,9 +31,9 @@
         </fieldset>
         
         <fieldset>
-            <legend>Rating and review</legend>
+            <legend>Rating and Review</legend>
             
-            <div class="r_stars">
+            <div class="stars">
                 <label for="onestar"><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
                 <label for="twostar"><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
                 <label for="threestar"><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
@@ -57,10 +56,11 @@
             </div>
         
         </fieldset>
-        
+   
         <div>
             <input type="submit" value="Post Review Form">
-        </div>
+        </div> 
+        </form>
     </main>
 
     <footer> 

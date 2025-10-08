@@ -7,11 +7,11 @@
     --background-color-2: rgb(74, 79, 143);
     --text-color: rgb(15, 14, 17);
     --neutral: rgb(238, 238, 238);
-
 }
 
-main {
+body {
     font: var(--non-heading-font);
+    font-family: var(--non-heading-font);
 }
 
 h1 {
@@ -23,26 +23,73 @@ h1 {
     margin-bottom: 2rem;
 }
 
+
+/*----------- FORM STYLING --------------*/
+.rf1 fieldset {
+    border: var(--accent-color) 5px groove;
+    font-family: var(--non-heading-font);
+    margin: 5px 0;
+    display: block;
+    background-color: var(--background-color-1);
+}
+
+.rf1 legend {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+.rf1 div {
+    margin: 1rem 0;
+}
+
+.rf1 input[type="date"], 
+.rf1 input[type="text"],
+.rf1 select 
+{
+    background-color: rgb(230, 230, 230);
+    display: block;
+    padding: .75rem;
+    width:100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+/* Radio
+
+/* Make sure items are a good size for fingers in mobile views. */
+.rf1 input[type="submit"]{
+    border-radius: 6px;
+    background-image: radial-gradient(var(--heading-color),var(--background-color-2));
+    color: var(--neutral);
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-left: 1rem;
+    font: var(--heading-font);
+}
+
+/* Tells you when required inputs are valid*/
+.rf1 input:required {
+    color: red;
+    border-bottom: solid 4px red;
+}
+
+.rf1 input:required:valid {
+    color: green;
+    border-bottom: solid 4px green;
+}
+
+
+/*footer*/
 footer {
-    height: 8rem;
+    height: 10rem;
     width: auto;
-    border: 5px;
-    border-style: groove;
+    border:var(--accent-color) 5px groove;
     text-align: center;
     font-family: var(--non-heading-font);
     color: var(--heading-color);
     background-color: var(--background-color-1);
-    border-color: var(--accent-color);
     margin-top: 2rem;
-}
-
-/*----------- FORM STYLING --------------*/
-
-.rf1 fieldset {
-    margin: 2rem 0;
-    border: 1px; 
-    border-color:red;
-    padding: .5rem;
 }
 
 
