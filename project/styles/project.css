@@ -13,6 +13,10 @@
 html {
     color: var(--text-color);
     display: grid;
+    max-width: 1400px;
+    font-family: var(--non-heading-font);
+    font-size: 1rem;
+    background-color: var(--neutral);
 }
 
 h1 {
@@ -31,11 +35,24 @@ h2 {
 
 
 .card {
-    font-family: var(--non-heading-font);
-    border: 5px;
-    border-style: groove;
+    margin: 2rem 0;
+    border: 7px ridge var(--accent-color);
+    border-radius: 15px;
     text-align: center;
     background-color: var(--background-color-1);
+    box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
+}
+
+.card img {
+    border: 7px ridge var(--accent-color);
+    border-radius: 15px;
+    box-shadow: rgb(17, 14, 17, .75) 5px 5px;
+}
+
+#thanks_card {
+    display: flex;
+    width: 500px;
+    max-width: 1000px;
 }
 
 .navigation {
@@ -74,13 +91,14 @@ h2 {
 }
 
 footer {
-    height: 8rem;
+    height: 10rem;
     width: auto;
-    border: 5px;
+    border: 7px ridge var(--accent-color);
     border-style: groove;
+    border-radius: 15px;
     text-align: center;
-    font-family: var(--non-heading-font);
     color: var(--heading-color);
     background-color: var(--background-color-2);
     border-color: var(--accent-color);
+    box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
 }
