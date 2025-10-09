@@ -68,7 +68,8 @@ main {
     text-align: center;
     justify-content: center;
     color: var(--heading-color);
-    width: 100%;
+    width: auto;
+    height: fit-content;
 }
 
 .navigation li {
@@ -76,14 +77,12 @@ main {
 }
 
 .navigation a {
-    font-size: 24px;
+    font-size: 22px;
     font-family: var(--heading-font);
 	display: block;
 	color: var(--heading-color);
 	text-decoration: none;
-    margin: 10px 40px;
 }
-.navigation2 a:hover,
 .navigation a:hover {
 	font-weight: 700;
 	text-decoration: underline;
@@ -95,7 +94,6 @@ main {
 	font-weight: 700;
 	font-family: var(--heading-font);
 }
-/* Navigation 2*/
 
 footer {
     height: 10rem;
