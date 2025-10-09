@@ -34,7 +34,7 @@
         font-size: 24px;
         font-family: var(--heading-font);
         display: block;
-        color: var(--heading-color);
+        color: var(--heading_and_accent1-color);
         text-decoration: none;
         margin: 10px 40px;
     }
@@ -42,11 +42,11 @@
     .navigation a:hover {
         font-weight: 700;
         text-decoration: underline;
-        text-decoration-color: var(--accent-color);
+        text-decoration-color: var(--accent2-color);
     }
 
     .highlight {
-        color: var(--heading-color);
+        color: var(--);
         font-weight: 700;
         font-family: var(--heading-font);
     }
