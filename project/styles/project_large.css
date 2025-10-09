@@ -15,6 +15,7 @@
         padding: 12px;
     }
 
+    /* Navigation 1*/
     .navigation {
     list-style: none;
 	display: flex;
@@ -49,7 +50,7 @@
         font-weight: 700;
         font-family: var(--heading-font);
     }
-
+    /* Navigation 2*/
 
 
 

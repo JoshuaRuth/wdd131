@@ -33,6 +33,9 @@ h2 {
     font-size: 1.5rem;
 }
 
+main {
+    display: block;
+}
 
 .card {
     margin: 2rem 0;
@@ -55,6 +58,7 @@ h2 {
     max-width: 1000px;
 }
 
+/* Navigation 1*/
 .navigation {
     list-style: none;
 	display: flex;
@@ -64,11 +68,13 @@ h2 {
     text-align: center;
     justify-content: center;
     color: var(--heading-color);
+    width: 100%;
 }
 
 .navigation li {
 	flex: 1 1 auto;
 }
+
 .navigation a {
     font-size: 24px;
     font-family: var(--heading-font);
@@ -77,7 +83,7 @@ h2 {
 	text-decoration: none;
     margin: 10px 40px;
 }
-
+.navigation2 a:hover,
 .navigation a:hover {
 	font-weight: 700;
 	text-decoration: underline;
@@ -89,6 +95,7 @@ h2 {
 	font-weight: 700;
 	font-family: var(--heading-font);
 }
+/* Navigation 2*/
 
 footer {
     height: 10rem;
