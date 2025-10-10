@@ -40,7 +40,7 @@ main {
 
 /*cards*/
 
-.card {
+.card ,.thanks_card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,10 +62,9 @@ main {
     margin: 5px;
 }
 
-#thanks_card {
-    display: flex;
-    width: 400px;
-    max-width: 1000px;
+.thanks_card {
+    grid-column: 2;
+    width: auto;
 }
 
 /*Navigation*/
