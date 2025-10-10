@@ -45,7 +45,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2.2rem 6px;
     border: 7px ridge var(--accent2-color);
     border-radius: 15px;
     background-color: var(--background-color-1);
@@ -80,6 +80,7 @@ main {
     color: var(--heading_and_accent1-color);
     width: auto;
     height: fit-content;
+    margin-bottom: 1rem;
 }
 
 .navigation li {
@@ -182,4 +183,5 @@ footer {
     background-color: var(--background-color-2);
     box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
     padding-bottom: 10px;
+    margin-top: 1rem;
 }
