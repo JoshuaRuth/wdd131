@@ -38,7 +38,7 @@ main {
     display: block;
 }
 
-/*card*/
+/*cards*/
 
 .card {
     display: flex;
@@ -51,6 +51,7 @@ main {
     background-color: var(--background-color-1);
     box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
     padding: 1.5rem 10px;
+    padding-bottom: 2px;
 }
 
 
@@ -63,7 +64,7 @@ main {
 
 #thanks_card {
     display: flex;
-    width: 500px;
+    width: 400px;
     max-width: 1000px;
 }
 
@@ -181,5 +182,5 @@ footer {
     color: var(--heading_and_accent1-color);
     background-color: var(--background-color-2);
     box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
