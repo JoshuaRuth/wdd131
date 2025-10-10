@@ -55,7 +55,7 @@ main {
 }
 
 
-.card img {
+.card , .thanks_card img {
     border: 7px ridge var(--accent2-color);
     border-radius: 15px;
     box-shadow: rgb(17, 14, 17, .75) 5px 5px;
