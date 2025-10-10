@@ -57,7 +57,11 @@ gems.forEach(gem =>{
 
   select.appendChild(option)
 });
+
 //==Rock gallery==//
+
+
+
 
 //visit counter//
 // 1️⃣ Initialize display element variable
