@@ -126,6 +126,9 @@ figure {
 }
 
 /*Opinion Form*/
+fieldset {
+    max-width: 350px;
+}
 
 .opinion_f fieldset {
     border-top: var(--heading_and_accent1-color) groove 7px;
@@ -134,6 +137,8 @@ figure {
     border-left: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    justify-content: center;
+
 }
 .opinion_f legend {
     font-family: var(--heading-font);
@@ -160,9 +165,9 @@ figure {
     border-radius: 6px;
     padding: .75rem;
     color:rgb(80, 80, 80);
-    width:100%;
-    max-width: 400px;
     appearance: none;
+    width: 16rem;
+ 
 }
 
 .opinion_f input[type="submit"] {
@@ -172,7 +177,6 @@ figure {
     color: var(--neutral);
     padding: .6rem;
     width: 96%;
-    max-width: 400px;
     margin-left: 6px;
     margin-top: 1rem;
     font-family: var(--heading-font);
