@@ -34,6 +34,13 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--heading_and_accent1-color);
+    text-align: center;
+}
+
 main {
     display: block;
 }
@@ -49,17 +56,17 @@ main {
     border: 7px ridge var(--accent2-color);
     border-radius: 15px;
     background-color: var(--background-color-1);
-    box-shadow: rgb(17, 14, 17, .75) 5px 5px inset;
+    box-shadow: inset rgb(17, 14, 17, .75) 5px 5px;
     padding: 1.5rem 10px;
     padding-bottom: 2px;
 }
 
-
-.card , .thanks_card img {
+img {
     border: 7px ridge var(--accent2-color);
     border-radius: 15px;
     box-shadow: rgb(17, 14, 17, .75) 5px 5px;
     margin: 5px;
+    max-width: 400;
 }
 
 .thanks_card {
@@ -134,7 +141,6 @@ main {
     flex-direction: row;
 }
 
-
 .opinion_f input[type="text"],
 .opinion_f input[type="email"],
 .opinion_f select, .opinion_f textarea
@@ -171,7 +177,10 @@ main {
     border-bottom: solid 4px limegreen;
 }
 
-/*Footer*/
+/*image gallery*/
+
+/*footer*/
+
 
 footer {
     height: 10rem;
