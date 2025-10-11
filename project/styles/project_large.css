@@ -19,13 +19,15 @@
     
     /*.gallery*/
 
-
+    .gallery {
+        display: grid;
+    }
 
     .gallery div {
         padding: 1rem;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .gallery h2{
         grid-row: 0;

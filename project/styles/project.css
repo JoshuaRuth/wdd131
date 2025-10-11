@@ -66,6 +66,7 @@ img {
     border-radius: 15px;
     box-shadow: rgb(17, 14, 17, .75) 5px 5px;
     margin: 5px;
+    max-width: 400;
 }
 
 .thanks_card {
@@ -77,15 +78,15 @@ img {
 
 .gallery {
     grid-column: 2;
-    padding-bottom: 1rem; 
 }
 
 .gallery figure {
     background-color: var(--background-color-2);
     border: var(--heading_and_accent1-color) 7px ridge;
-    padding: 1rem;
+    padding: .7rem;
     box-shadow: rgb(17, 14, 17, .75) 5px 5px;
     margin: 0;
+    justify-content: center;
     text-align: center;
 }
 

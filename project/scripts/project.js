@@ -59,20 +59,3 @@ gems.forEach(gem =>{
   select.appendChild(option)
 });
 
-
-	pictures.forEach(picture => {
-		let card = document.createElement("section");
-		let name = document.createElement("h3");
-		let img = document.createElement("img");
-
-		name.textContent = picture.pictureName;
-		img.setAttribute("src", picture.imageUrl);
-		img.setAttribute("alt",`${picture.pictureName}`);
-		img.setAttribute("loading", "lazy");
-
-		card.appendChild(name);
-		card.appendChild(img);
-
-		document.querySelector("#gallery_grid").appendChild(card);
-
-	});
