@@ -6,13 +6,29 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .card {
+
+
+    .card,.thanks_card,.gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         background: var(--background-color-1);
         padding: 12px;
+    }
+    
+    /*.gallery*/
+
+
+
+    .gallery div {
+        padding: 1rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr auto;
+    }
+    .gallery h2{
+        grid-row: 0;
     }
 
     /* Navigation 1*/
