@@ -32,6 +32,7 @@ h2 {
     color: var(--heading_and_accent1-color);
     font-size: 1.5rem;
     text-align: center;
+    grid-row: 0;
 }
 
 h3 {
@@ -47,18 +48,18 @@ main {
 
 /*cards*/
 
-.card ,.thanks_card,.gallery {
+.card ,.thanks_card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 2.2rem 6px;
+    margin: 0 6px;
+    margin-bottom: 1.5rem;
     border: 7px ridge var(--accent2-color);
     border-radius: 15px;
     background-color: var(--background-color-1);
     box-shadow: inset rgb(17, 14, 17, .75) 5px 5px;
-    padding: 1.5rem 10px;
-    padding-bottom: 2px;
+    padding: 1rem 10px;
 }
 
 img {
@@ -76,15 +77,8 @@ img {
 
 /* Gallery */
 
-.gallery {
-    grid-column: 2;
-}
-
-.gallery figure {
-    background-color: var(--background-color-2);
-    border: var(--heading_and_accent1-color) 7px ridge;
+figure {
     padding: .7rem;
-    box-shadow: rgb(17, 14, 17, .75) 5px 5px;
     margin: 0;
     justify-content: center;
     text-align: center;
@@ -103,7 +97,7 @@ img {
     color: var(--heading_and_accent1-color);
     width: auto;
     height: fit-content;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .navigation li {
@@ -117,7 +111,8 @@ img {
 	color: var(--heading_and_accent1-color);
 	text-decoration: none;
     padding: 0 8px;
-    margin: 3px 0;
+    margin-top: 3px;
+    margin-bottom: 1rem;
 }
 .navigation a:hover {
 	font-weight: 700;
@@ -195,6 +190,10 @@ img {
 
 /*image gallery*/
 
+
+figcaption {
+    padding-top: 1rem;
+}
 /*footer*/
 
 
