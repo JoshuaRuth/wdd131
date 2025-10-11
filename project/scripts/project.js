@@ -14,76 +14,52 @@ document.getElementById("lastModified").innerHTML = text;
 
 //select for form
 
-
-
-
-//==Rock gallery==//
-const pictures = [
+const gems = [
   {
-    pictureName: "Azurite and Malachite",
-    imageUrl:
-    "images/azurite_malachite.webp"
+    g_name: "Ruby",
   },
   {
-    pictureName: "Calcite",
-    imageUrl:
-    "images/calcite.webp"
-  },
+    g_name: "Topaz",
+      },
   {
-    pictureName: "Feldspar variety",
-    imageUrl:
-    "images/feldspars.webp"
-  },
-    {
-    pictureName: "Garnets",
-    imageUrl:
-    "images/garnets.webp"
-  },
-    {
-    pictureName: "Another Picture of Garnets",
-    imageUrl:
-    "images/garnets_two.webp"
-  },
-    {
-    pictureName: "Geodes and Thunder Egg",
-    imageUrl:
-    "images/geodes_and_thunder_egg.webp"
-  },
-    {
-    pictureName: "Lapiz Lazuli",
-    imageUrl:
-    "images/lapis.webp"
-  },
-    {
-    pictureName: "Opal",
-    imageUrl:
-    "images/opals.webp"
-  },
-      {
-    pictureName: "Quartz",
-    imageUrl:
-    "images/quartz.webp"
-  },
-      {
-    pictureName: "Rubies and Ruby Matrixes",
-    imageUrl:
-    "images/rubies_rocks_w_rubies.webp"
-  },
-      {
-    pictureName: "Mixed Gems",
-    imageUrl:
-    "images/variety_one.webp"
-  },
+    g_name: "Citrine",
+      },
   {
-    pictureName: "More Mixed Gems",
-    imageUrl:
-    "images/variety_two.webp"
-  }
-];
+    g_name: "Emerald",
+      },
+  {
+    g_name: "Sapphire",
+      },
+  {
+    g_name: "Tanzanite",
+      },
+  {
+    g_name: "Amethyst",
+      },
+  {
+    g_name: "Opal",
+      },
+  {
+    g_name: "Smokey Quartz",
+      },
+  {
+    g_name: "Other (Please let us know in the text box...)"
+      },
+  ];
 
-createPictureCard(pictures); 
+const select = document.querySelector("#selectGem");
+  
+gems.forEach(gem =>{
+  let option = document.createElement("option");
 
-function createPictureCard() {
+  option.value = gem.g_name;
+  
+  option.textContent = gem.g_name;
+
+  select.appendChild(option)
+});
+
+
 	pictures.forEach(picture => {
 		let card = document.createElement("section");
 		let name = document.createElement("h3");
@@ -97,8 +73,6 @@ function createPictureCard() {
 		card.appendChild(name);
 		card.appendChild(img);
 
-		document.querySelector(".gallery_grid").appendChild(card);
+		document.querySelector("#gallery_grid").appendChild(card);
 
 	});
-
-}
