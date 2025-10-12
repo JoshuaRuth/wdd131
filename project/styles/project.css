@@ -59,6 +59,7 @@ main {
     background-color: var(--background-color-1);
     box-shadow: inset rgb(17, 14, 17, .75) 5px 5px;
     padding: 1rem 10px;
+    max-width: fit-content;
 }
 
 img {
@@ -81,6 +82,7 @@ figure {
     margin: 0;
     justify-content: center;
     text-align: center;
+    max-width: fit-content;
 }
 
 /*Navigation*/
@@ -130,9 +132,6 @@ figure {
 }
 
 /*Opinion Form*/
-fieldset {
-    max-width: 350px;
-}
 
 .opinion_f fieldset {
     border-top: var(--heading_and_accent1-color) groove 7px;
@@ -170,8 +169,7 @@ fieldset {
     padding: .75rem;
     color:rgb(80, 80, 80);
     appearance: none;
-    width: 16rem;
- 
+    width: 15rem;
 }
 
 .opinion_f input[type="submit"] {
