@@ -125,6 +125,10 @@ figure {
 	font-family: var(--heading-font);
 }
 
+#nav_bar {
+    display: block;
+}
+
 /*Opinion Form*/
 fieldset {
     max-width: 350px;
