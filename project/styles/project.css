@@ -172,7 +172,7 @@ figcaption {
     width: 14rem;
 }
 
-.opinion_f input[type="submit"] {
+.opinion_f input[type="submit"], #catButton{
     border: 7px groove var(--heading_and_accent1-color);
     border-radius: 15px;
     background-image: radial-gradient(var(--heading_and_accent1-color),var(--background-color-2));
@@ -183,6 +183,7 @@ figcaption {
     margin-top: 1rem;
     font-family: var(--heading-font);
     font-size: 16px;
+    cursor: pointer;
 }
 
 .opinion_f input:required {

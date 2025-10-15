@@ -81,13 +81,7 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
-//========//
-const cbutton = document.getElementById("catButton")
 
-function sendMessage(){
-  alert("HAVE A GOOD DAY!!!");
-}
 
-cbutton.addEventListener("click", sendMessage)
 
 
