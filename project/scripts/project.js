@@ -10,7 +10,6 @@ year.innerHTML = `<span class="highlight">${today.getFullYear()}© ♋Joshua Rut
 let text = document.lastModified;
 document.getElementById("lastModified").innerHTML = text;
 //==============================================================================//
-// Hamburger Menu?
 
 //select for form
 
@@ -45,7 +44,7 @@ const gems = [
   {
     g_name: "Other (Please let us know in the text box...)"
       },
-  ];
+];
 
 const select = document.querySelector("#selectGem");
   
@@ -81,3 +80,14 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+//========//
+const cbutton = document.getElementById("catButton")
+
+function sendMessage(){
+  alert("HAVE A GOOD DAY!!!");
+}
+
+cbutton.addEventListener("click", sendMessage)
+
+
