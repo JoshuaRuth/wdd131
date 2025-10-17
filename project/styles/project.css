@@ -97,7 +97,7 @@ figcaption {
     text-align: center;
     justify-content: center;
     color: var(--heading_and_accent1-color);
-    width: 100%;
+    width: auto;
     height: fit-content;
     margin-bottom: 2rem;
     padding: 4px;
