@@ -17,6 +17,7 @@ html {
     font-family: var(--non-heading-font);
     font-size: 1.3rem;
     background-color: var(--neutral);
+    Width: auto;
 }
 
 h1 {
